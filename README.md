@@ -5,13 +5,15 @@
 
 # Cookie Consent bundle for Symfony
 Symfony bundle to append Cookie Consent to your website to comply to AVG/GDPR for cookies.
+Based on [Cookie Consent Bundle](https://github.com/Harborn-digital/cookie-consent-bundle) and adapted to meet [Symfony 6.4](https://symfony.com/releases/6.4) requirements.
+As well as [PHP Unit 9](https://phpunit.de/documentation.html) [testing](https://docs.phpunit.de/en/9.6/)
 
 ## Installation
 
 ### Step 1: Download using composer
 In a Symfony application run this command to install and integrate Cookie Consent bundle in your application:
 ```bash
-composer require connectholland/cookie-consent-bundle
+composer require connectholland/cookie-consent-bundle-fork
 ```
 
 ### Step 2: Enable the bundle
