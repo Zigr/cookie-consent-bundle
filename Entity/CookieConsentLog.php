@@ -11,48 +11,46 @@ namespace ConnectHolland\CookieConsentBundle\Entity;
 
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\DBAL\Types\Types;
 
-/**
- * @ORM\Entity
- * @ORM\Table(name="ch_cookieconsent_log")
- */
+#[ORM\Entity]
+#[Table(name: "ch_cookieconsent_log")]
 class CookieConsentLog
 {
     /**
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
-     *
      * @var int
      */
+    #[ORM\Id]
+    #[ORM\Column(type: "integer")]
+    #[ORM\GeneratedValue]
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
      *
      * @var string
      */
+    #[ORM\Column(type: "string", length: 255)]
     protected $ipAddress;
 
     /**
-     * @ORM\Column(type="string", length=255)
      *
      * @var string
      */
+    #[ORM\Column(type: "string", length: 255)]
     protected $cookieConsentKey;
 
     /**
-     * @ORM\Column(type="string", length=255)
      *
      * @var string
      */
+    #[ORM\Column(type: "string", length: 255)]
     protected $cookieName;
 
     /**
-     * @ORM\Column(type="string", length=255)
      *
      * @var string
      */
+    #[ORM\Column(type: "string", length: 255)]
     protected $cookieValue;
 
     /**
@@ -60,6 +58,7 @@ class CookieConsentLog
      *
      * @var DateTime
      */
+    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     protected $timestamp;
 
     public function getId(): int
