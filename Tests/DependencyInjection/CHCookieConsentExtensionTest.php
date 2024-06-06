@@ -46,6 +46,7 @@ class CHCookieConsentExtensionTest extends TestCase
      */
     public function testInvalidConfiguration(): void
     {
+        $this->expectException(\Symfony\Component\Config\Definition\Exception\InvalidConfigurationException::class);
         $this->createConfiguration($this->getInvalidConfig());
     }
 

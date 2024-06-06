@@ -59,8 +59,11 @@ class CookieConsentControllerTest extends TestCase
         $this->templating              = $this->createMock(Environment::class);
         $this->formFactory             = $this->createMock(FormFactoryInterface::class);
         $this->cookieChecker           = $this->createMock(CookieChecker::class);
-        $this->translator              = $this->createMock(TranslatorInterface::class);
-        $this->router                  = $this->createMock(RouterInterface::class);
+        $this->translator = $this->getMockBuilder(TranslatorInterface::class)
+                ->addMethods(['setLocale'])
+                ->setMethods(['trans', 'getLocale'])
+                ->getMock();
+        $this->router = $this->createMock(RouterInterface::class);
         $this->cookieConsentController = new CookieConsentController(
             $this->templating,
             $this->formFactory,
@@ -147,7 +150,7 @@ class CookieConsentControllerTest extends TestCase
             ->with($locale);
 
         $request
-            ->expects($this->once())
+                ->expects($this->once())
             ->method('setLocale')
             ->with($locale);
 
