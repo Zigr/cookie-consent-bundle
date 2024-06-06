@@ -1,5 +1,5 @@
 {
-    "name": "connectholland/cookie-consent-bundle-fork",
+    "name": "zigr/connectholland_cookie-consent-bundle-fork",
     "type": "symfony-bundle",
     "description": "Symfony bundle for implementing Cookie Consent to comply to AVG/GDPR. Based on https://github.com/Harborn-digital/cookie-consent-bundle and adapted to meet symfony 6.4 requirements.",
     "keywords": [
