@@ -4,3 +4,5 @@ vendor/
 .php_cs.cache
 .idea/*
 /nbproject/private/
+.phpunit.result.cache
+
