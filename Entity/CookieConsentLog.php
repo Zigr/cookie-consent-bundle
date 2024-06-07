@@ -17,11 +17,12 @@ use Doctrine\DBAL\Types\Types;
 #[ORM\Table(name: "ch_cookieconsent_log")]
 class CookieConsentLog
 {
+
     /**
      * @var int
      */
     #[ORM\Id]
-    #[ORM\Column(type: "integer")]
+    #[ORM\Column(type: Types::INTEGER)]
     #[ORM\GeneratedValue]
     protected $id;
 
@@ -29,28 +30,28 @@ class CookieConsentLog
      *
      * @var string
      */
-    #[ORM\Column(type: "string", length: 255)]
+    #[ORM\Column(type: Types::STRING, length: 255)]
     protected $ipAddress;
 
     /**
      *
      * @var string
      */
-    #[ORM\Column(type: "string", length: 255)]
+    #[ORM\Column(type: Types::STRING, length: 255)]
     protected $cookieConsentKey;
 
     /**
      *
      * @var string
      */
-    #[ORM\Column(type: "string", length: 255)]
+    #[ORM\Column(type: Types::STRING, length: 255)]
     protected $cookieName;
 
     /**
      *
      * @var string
      */
-    #[ORM\Column(type: "string", length: 255)]
+    #[ORM\Column(type: Types::STRING, length: 255)]
     protected $cookieValue;
 
     /**
