@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\DBAL\Types\Types;
 
 #[ORM\Entity]
-#[ORM\Table(name: "ch_cookieconsent_log")]
+#[ORM\Table(name: 'cookie_consent_log')]
 class CookieConsentLog
 {
 
