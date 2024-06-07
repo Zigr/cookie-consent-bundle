@@ -17,3 +17,8 @@ composer require zigr/connectholland_cookie-consent-bundle-fork
 ```
 
 Go futher on [Original Bundle Installation Page](https://github.com/Harborn-digital/cookie-consent-bundle)
+
+Finally:
+```bash
+./vendor/bin/phpunit
+```
