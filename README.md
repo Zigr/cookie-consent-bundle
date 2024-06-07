@@ -13,7 +13,7 @@ As well as [PHP Unit 9](https://phpunit.de/documentation.html) [testing](https:/
 ### Step 1: Download using composer
 In a Symfony application run this command to install and integrate Cookie Consent bundle in your application:
 ```bash
-composer require connectholland/cookie-consent-bundle-fork
+composer require zigr/connectholland_cookie-consent-bundle-fork
 ```
 
 Go futher on [Original Bundle Installation Page](https://github.com/Harborn-digital/cookie-consent-bundle)
