@@ -44,6 +44,7 @@
         "phpunit/phpunit": "^9.5",
         "symfony/yaml": "^3.4 || ^4.2 || ^5.0 || ^6.0"
     },
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "exclude-from-classmap": ["/Tests/"],
